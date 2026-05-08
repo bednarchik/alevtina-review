@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Alevtina Skin Vet: курсы, вебинары, клинические разборы и консультации по ветеринарной дерматологии для владельцев животных и ветеринарных специалистов.">
+    <meta name="keywords" content="ветеринарная дерматология, курсы для ветеринаров, вебинары для ветеринарных врачей, зуд у собаки, дерматология кошек, цитология кожи, консультация ветеринарного дерматолога">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alevtina-skin.ru/">
+    <meta property="og:title" content="Alevtina Skin Vet | Курсы, вебинары и консультации по дерматологии животных">
+    <meta property="og:description" content="Образовательная платформа Алевтины Геннадьевны для владельцев животных и ветеринарных специалистов.">
+    <meta property="og:image" content="https://alevtina-skin.ru/dr-alya.jpeg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Alevtina Skin Vet">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alevtina Skin Vet | Ветеринарная дерматология">
+    <meta name="twitter:description" content="Курсы, вебинары, клинические разборы и консультации для владельцев и врачей.">
+    <meta name="twitter:image" content="https://alevtina-skin.ru/dr-alya.jpeg">
+    <title>Alevtina Skin Vet | Курсы и консультации по ветеринарной дерматологии</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --ink: #111816;
+            --text: #2e3835;
+            --muted: #62716d;
+            --paper: #fbfcfb;
+            --surface: #ffffff;
+            --line: #dce8e2;
+            --forest: #0f6b55;
+            --forest-dark: #094737;
+            --teal: #0b7b86;
+            --coral: #d75b49;
+            --plum: #67456d;
+            --gold: #e1aa38;
+            --mint: #e6f5ee;
+            --sky: #e7f4f7;
+            --rose: #fff0ed;
+            --lilac: #f2edf4;
+            --shadow: 0 18px 50px rgba(17, 24, 22, 0.11);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        .container {
+            width: min(1160px, calc(100% - 32px));
+            margin: 0 auto;
+            min-width: 0;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background: rgba(251, 252, 251, 0.94);
+            border-bottom: 1px solid rgba(220, 232, 226, 0.95);
+            backdrop-filter: blur(18px);
+        }
+
+        .nav {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+        }
+
+        .brand {
+            display: grid;
+            gap: 1px;
+            flex: 0 0 auto;
+            text-decoration: none;
+        }
+
+        .brand strong {
+            font-size: 1rem;
+            line-height: 1.15;
+            letter-spacing: 0;
+        }
+
+        .brand span {
+            color: var(--muted);
+            font-size: 0.82rem;
+            line-height: 1.2;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.94rem;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: var(--forest);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 0 0 auto;
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+            color: var(--ink);
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 0.74rem 1rem;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 800;
+            line-height: 1.12;
+            text-align: center;
+            transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+        }
+
+        .btn:hover,
+        .btn:focus-visible {
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            color: #ffffff;
+            background: var(--forest);
+            box-shadow: 0 12px 24px rgba(15, 107, 85, 0.2);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus-visible {
+            background: var(--forest-dark);
+        }
+
+        .btn-secondary {
+            color: var(--forest-dark);
+            background: var(--surface);
+            border-color: var(--line);
+        }
+
+        .btn-coral {
+            color: #ffffff;
+            background: var(--coral);
+            box-shadow: 0 12px 24px rgba(215, 91, 73, 0.2);
+        }
+
+        .btn-dark {
+            color: #ffffff;
+            background: var(--ink);
+        }
+
+        .review-banner {
+            padding: 10px 16px;
+            color: #ffffff;
+            background: #67456d;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .review-banner a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: calc(100svh - 74px);
+            display: grid;
+            align-items: end;
+            color: #ffffff;
+            background-image:
+                linear-gradient(90deg, rgba(6, 30, 23, 0.9), rgba(6, 30, 23, 0.62) 56%, rgba(6, 30, 23, 0.2)),
+                url("dr-alya.jpeg");
+            background-size: cover;
+            background-position: 66% 30%;
+        }
+
+        .hero-content {
+            width: min(790px, 100%);
+            min-width: 0;
+            padding: 94px 0 62px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 18px;
+            color: #f7fbfa;
+            font-size: 0.88rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 36px;
+            height: 3px;
+            border-radius: 8px;
+            background: var(--gold);
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        li {
+            overflow-wrap: anywhere;
+            word-break: normal;
+        }
+
+        h1 {
+            max-width: 790px;
+            margin: 0;
+            font-size: 5rem;
+            line-height: 0.98;
+            letter-spacing: 0;
+        }
+
+        .hero-lead {
+            max-width: 710px;
+            margin: 24px 0 0;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.22rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .hero .btn-secondary {
+            background: rgba(255, 255, 255, 0.94);
+        }
+
+        .hero-proof {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            max-width: 760px;
+            margin-top: 34px;
+        }
+
+        .proof-item {
+            min-height: 98px;
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.11);
+        }
+
+        .proof-item strong {
+            display: block;
+            font-size: 1.34rem;
+            line-height: 1.08;
+        }
+
+        .proof-item span {
+            display: block;
+            margin-top: 8px;
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.92rem;
+        }
+
+        section {
+            padding: 84px 0;
+            scroll-margin-top: 88px;
+        }
+
+        .section-intro {
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.55fr);
+            gap: 28px;
+            align-items: end;
+            margin-bottom: 34px;
+        }
+
+        .section-kicker {
+            margin: 0 0 10px;
+            color: var(--teal);
+            font-size: 0.82rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0;
+        }
+
+        .section-title {
+            margin: 0;
+            font-size: 3.2rem;
+            line-height: 1.04;
+            letter-spacing: 0;
+        }
+
+        .section-copy {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1.04rem;
+        }
+
+        .audience-grid,
+        .product-grid,
+        .format-grid,
+        .consult-grid,
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .audience-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .card,
+        .audience-card,
+        .product-card,
+        .format-card,
+        .consult-card,
+        .review-card,
+        .faq-item {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+            box-shadow: 0 12px 30px rgba(17, 24, 22, 0.05);
+        }
+
+        .audience-card {
+            min-height: 430px;
+            display: grid;
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .audience-card.owner {
+            background: var(--mint);
+        }
+
+        .audience-card.doctor {
+            background: var(--lilac);
+        }
+
+        .audience-label {
+            display: inline-flex;
+            width: fit-content;
+            min-height: 32px;
+            align-items: center;
+            padding: 0.25rem 0.68rem;
+            border-radius: 8px;
+            color: var(--forest-dark);
+            background: rgba(15, 107, 85, 0.1);
+            font-size: 0.82rem;
+            font-weight: 800;
+        }
+
+        .audience-card.doctor .audience-label {
+            color: #4b2554;
+            background: rgba(103, 69, 109, 0.12);
+        }
+
+        .audience-card h2 {
+            margin: 24px 0 0;
+            font-size: 2rem;
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .audience-card p {
+            color: var(--text);
+        }
+
+        .check-list {
+            display: grid;
+            gap: 9px;
+            margin: 22px 0;
+            padding: 0;
+            list-style: none;
+            color: var(--text);
+        }
+
+        .check-list li {
+            display: grid;
+            grid-template-columns: 22px minmax(0, 1fr);
+            gap: 10px;
+        }
+
+        .check-list li::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            margin-top: 0.6rem;
+            border-radius: 8px;
+            background: var(--coral);
+        }
+
+        .audience-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-self: end;
+            margin-top: 12px;
+        }
+
+        .band {
+            background: #f1f8f5;
+            border-block: 1px solid var(--line);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .tab-button {
+            min-height: 44px;
+            padding: 0.66rem 0.95rem;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            color: var(--muted);
+            background: var(--surface);
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .tab-button.active {
+            color: #ffffff;
+            border-color: var(--forest);
+            background: var(--forest);
+        }
+
+        .product-panel {
+            display: none;
+        }
+
+        .product-panel.active {
+            display: block;
+        }
+
+        .product-card {
+            min-height: 360px;
+            display: grid;
+            padding: 24px;
+        }
+
+        .product-topline {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            min-height: 30px;
+            padding: 0.24rem 0.62rem;
+            border-radius: 8px;
+            color: var(--forest-dark);
+            background: rgba(15, 107, 85, 0.1);
+            font-size: 0.8rem;
+            font-weight: 800;
+        }
+
+        .tag.coral {
+            color: #7a261d;
+            background: rgba(215, 91, 73, 0.13);
+        }
+
+        .tag.plum {
+            color: #4b2554;
+            background: rgba(103, 69, 109, 0.13);
+        }
+
+        .tag.blue {
+            color: #07515a;
+            background: rgba(11, 123, 134, 0.12);
+        }
+
+        .status {
+            color: var(--ink);
+            font-size: 0.9rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .product-card h3,
+        .format-card h3,
+        .consult-card h3,
+        .faq-item h3 {
+            margin: 0;
+            font-size: 1.32rem;
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .product-card p,
+        .format-card p,
+        .consult-card p,
+        .faq-item p,
+        .review-card p {
+            color: var(--muted);
+        }
+
+        .product-card ul,
+        .consult-card ul {
+            display: grid;
+            gap: 9px;
+            margin: 18px 0;
+            padding-left: 1.12rem;
+            color: var(--muted);
+        }
+
+        .product-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            align-self: end;
+            margin-top: 18px;
+        }
+
+        .program-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.84fr) minmax(300px, 0.62fr);
+            gap: 22px;
+            align-items: stretch;
+        }
+
+        .program-main {
+            padding: 28px;
+            border-radius: 8px;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0c392e, #0b6670 58%, #67456d);
+        }
+
+        .program-main .section-kicker,
+        .program-main .section-copy {
+            color: rgba(255, 255, 255, 0.84);
+        }
+
+        .program-main .section-title {
+            max-width: 740px;
+        }
+
+        .module-list {
+            display: grid;
+            gap: 10px;
+            margin: 28px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .module-list li {
+            display: grid;
+            grid-template-columns: 44px minmax(0, 1fr);
+            gap: 12px;
+            align-items: start;
+            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.09);
+        }
+
+        .module-list strong {
+            display: grid;
+            place-items: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            color: var(--ink);
+            background: var(--gold);
+        }
+
+        .program-side {
+            display: grid;
+            gap: 14px;
+        }
+
+        .side-note {
+            padding: 22px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+        }
+
+        .side-note h3 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            line-height: 1.18;
+        }
+
+        .side-note p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .doctor-layout {
+            display: grid;
+            grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.1fr);
+            gap: 34px;
+            align-items: center;
+        }
+
+        .doctor-photo {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            background: var(--surface);
+        }
+
+        .doctor-photo img {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            object-position: 50% 20%;
+        }
+
+        .doctor-copy {
+            display: grid;
+            gap: 22px;
+        }
+
+        .credential-row {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .credential {
+            min-height: 120px;
+            padding: 18px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+        }
+
+        .credential strong {
+            display: block;
+            color: var(--forest);
+            font-size: 1.15rem;
+            line-height: 1.12;
+        }
+
+        .credential span {
+            display: block;
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .certificate-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .certificate-button {
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+            cursor: zoom-in;
+            text-align: left;
+        }
+
+        .certificate-button img {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+        }
+
+        .certificate-button span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 12px 14px;
+            color: var(--text);
+            font-weight: 800;
+        }
+
+        .certificate-button span::after {
+            content: "увеличить";
+            color: var(--teal);
+            font-size: 0.82rem;
+            font-weight: 800;
+        }
+
+        .format-card,
+        .consult-card,
+        .review-card {
+            min-height: 260px;
+            padding: 24px;
+        }
+
+        .format-number {
+            display: inline-grid;
+            place-items: center;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            color: #ffffff;
+            background: var(--teal);
+            font-weight: 800;
+        }
+
+        .format-card:nth-child(2) .format-number {
+            background: var(--coral);
+        }
+
+        .format-card:nth-child(3) .format-number {
+            background: var(--plum);
+        }
+
+        .format-card:nth-child(4) .format-number {
+            color: var(--ink);
+            background: var(--gold);
+        }
+
+        .format-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .consult-card.highlight {
+            background: var(--rose);
+            border-color: rgba(215, 91, 73, 0.22);
+        }
+
+        .price {
+            margin-top: 18px;
+            font-size: 1.48rem;
+            line-height: 1;
+            font-weight: 800;
+        }
+
+        .reviews {
+            background: #fff9eb;
+            border-block: 1px solid rgba(225, 170, 56, 0.3);
+        }
+
+        .stars {
+            color: var(--gold);
+            font-size: 1.08rem;
+            letter-spacing: 0;
+        }
+
+        .review-author {
+            display: block;
+            margin-top: 18px;
+            color: var(--ink);
+            font-weight: 800;
+        }
+
+        .faq-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .faq-item {
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            min-height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            padding: 18px 22px;
+            border: 0;
+            color: var(--ink);
+            background: var(--surface);
+            cursor: pointer;
+            text-align: left;
+            font-weight: 800;
+        }
+
+        .faq-question span:last-child {
+            flex: 0 0 auto;
+            color: var(--teal);
+            font-size: 1.2rem;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 22px 20px;
+            color: var(--muted);
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        .cta {
+            color: #ffffff;
+            background: linear-gradient(135deg, #061e17, #0f6b55 55%, #d75b49);
+        }
+
+        .cta-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.55fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .cta .section-kicker,
+        .cta .section-copy {
+            color: rgba(255, 255, 255, 0.86);
+        }
+
+        .cta-actions {
+            display: grid;
+            gap: 12px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .cta-actions span {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.92rem;
+        }
+
+        .hosting-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .hosting-card {
+            min-height: 390px;
+            display: grid;
+            padding: 24px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+            box-shadow: 0 12px 30px rgba(17, 24, 22, 0.05);
+        }
+
+        .hosting-card.recommended {
+            background: var(--mint);
+            border-color: rgba(15, 107, 85, 0.24);
+        }
+
+        .hosting-card h3 {
+            margin: 18px 0 0;
+            font-size: 1.35rem;
+            line-height: 1.16;
+        }
+
+        .hosting-card p {
+            color: var(--muted);
+        }
+
+        .hosting-card ul {
+            display: grid;
+            gap: 9px;
+            margin: 16px 0 0;
+            padding-left: 1.1rem;
+            color: var(--muted);
+        }
+
+        .hosting-verdict {
+            align-self: end;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(17, 24, 22, 0.1);
+            color: var(--ink);
+            font-weight: 800;
+        }
+
+        .site-footer {
+            padding: 34px 0;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            background: var(--surface);
+        }
+
+        .footer-layout {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 80;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(6, 18, 15, 0.82);
+        }
+
+        .lightbox.open {
+            display: flex;
+        }
+
+        .lightbox-dialog {
+            width: min(1180px, calc(100vw - 24px));
+            height: calc(100svh - 24px);
+            display: grid;
+            grid-template-rows: auto minmax(0, 1fr) auto;
+            overflow: hidden;
+            border-radius: 8px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .lightbox-header,
+        .lightbox-caption {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 14px 16px;
+        }
+
+        .lightbox-header {
+            border-bottom: 1px solid var(--line);
+        }
+
+        .lightbox-title {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 800;
+        }
+
+        .lightbox-close {
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .lightbox-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 0;
+            padding: 12px;
+            overflow: auto;
+            background: #eef4f1;
+        }
+
+        .lightbox-body img {
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .lightbox-caption {
+            color: var(--muted);
+            border-top: 1px solid var(--line);
+        }
+
+        @media (max-width: 1040px) {
+            h1 {
+                font-size: 4rem;
+            }
+
+            .section-title {
+                font-size: 2.6rem;
+            }
+
+            .format-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 920px) {
+            .menu-toggle {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 74px;
+                left: 16px;
+                right: 16px;
+                display: none;
+                padding: 16px;
+                border: 1px solid var(--line);
+                border-radius: 8px;
+                background: var(--surface);
+                box-shadow: var(--shadow);
+            }
+
+            .nav-links.open {
+                display: grid;
+            }
+
+            .nav-actions .btn-secondary {
+                display: none;
+            }
+
+            .section-intro,
+            .program-layout,
+            .doctor-layout,
+            .cta-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .audience-grid,
+            .product-grid,
+            .hosting-grid,
+            .consult-grid,
+            .review-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .container {
+                width: min(100% - 24px, 1160px);
+            }
+
+            .brand span {
+                display: none;
+            }
+
+            .nav {
+                min-height: 68px;
+            }
+
+            .nav-links {
+                top: 68px;
+            }
+
+            .nav-actions .btn-primary {
+                display: none;
+            }
+
+            .hero {
+                min-height: calc(100svh - 68px);
+                background-position: 78% center;
+            }
+
+            .hero-content {
+                padding: 72px 0 42px;
+            }
+
+            h1 {
+                font-size: 2.15rem;
+                line-height: 1.08;
+            }
+
+            .hero-lead {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .hero-proof,
+            .audience-grid,
+            .product-grid,
+            .format-grid,
+            .hosting-grid,
+            .consult-grid,
+            .review-grid,
+            .credential-row,
+            .certificate-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .audience-card,
+            .product-card,
+            .format-card,
+            .consult-card,
+            .review-card {
+                min-height: auto;
+            }
+
+            .product-footer {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .hero-actions,
+            .audience-actions {
+                flex-direction: column;
+            }
+
+            .hero-proof {
+                gap: 10px;
+            }
+
+            .proof-item {
+                min-height: auto;
+            }
+
+            .lightbox {
+                padding: 12px;
+            }
+
+            .lightbox-dialog {
+                height: auto;
+                max-height: calc(100svh - 24px);
+            }
+
+            .lightbox-body {
+                max-height: calc(100svh - 170px);
+            }
+
+            .lightbox-body img {
+                width: 100%;
+            }
+
+            .hero-actions .btn,
+            .audience-actions .btn {
+                width: 100%;
+            }
+
+            section {
+                padding: 62px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="review-banner">
+        Черновик для закрытого ревью. Не опубликованная версия. <a href="course-review.html">Открыть черновик курсов</a>
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="brand" href="#top" aria-label="Alevtina Skin Vet">
+                    <strong>Alevtina Skin Vet</strong>
+                    <span>дерматология, обучение, разборы</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#audiences">Для кого</a></li>
+                    <li><a href="#products">Программы</a></li>
+                    <li><a href="#doctor">Эксперт</a></li>
+                    <li><a href="#formats">Форматы</a></li>
+                    <li><a href="#hosting">Платформа</a></li>
+                    <li><a href="#consulting">Консультации</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a class="btn btn-secondary" href="mailto:alevtina-skin@mail.ru">Email</a>
+                    <a class="btn btn-primary" href="https://t.me/Alevtina_vet" target="_blank" rel="noopener noreferrer">Telegram</a>
+                    <button class="menu-toggle" type="button" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="eyebrow">ветеринарная дерматология без хаоса</p>
+                    <h1 id="hero-title">Обучение для владельцев и практические разборы для врачей</h1>
+                    <p class="hero-lead">
+                        Курсы, вебинары, клинические случаи и консультации Алевтины Геннадьевны помогают владельцам действовать спокойнее, а ветеринарным специалистам увереннее вести дерматологических пациентов.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-coral" href="#owners">Я владелец питомца</a>
+                        <a class="btn btn-primary" href="#doctors">Я ветеринарный специалист</a>
+                        <a class="btn btn-secondary" href="#products">Смотреть программы</a>
+                    </div>
+                    <div class="hero-proof" aria-label="Ключевые факты">
+                        <div class="proof-item">
+                            <strong>14+ лет</strong>
+                            <span>ветеринарной практики с кожными пациентами</span>
+                        </div>
+                        <div class="proof-item">
+                            <strong>2 трека</strong>
+                            <span>для владельцев и для ветеринарных специалистов</span>
+                        </div>
+                        <div class="proof-item">
+                            <strong>онлайн</strong>
+                            <span>вебинары, записи, клинические разборы, консультации</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="audiences" aria-labelledby="audiences-title">
+            <div class="container">
+                <div class="section-intro">
+                    <div>
+                        <p class="section-kicker">две аудитории</p>
+                        <h2 class="section-title" id="audiences-title">Одна экспертиза, разные задачи</h2>
+                    </div>
+                    <p class="section-copy">
+                        Владелец хочет понять, когда опасно и что подготовить. Врач хочет алгоритм, практику и уверенность в сложных случаях. Платформа должна говорить с каждым отдельно.
+                    </p>
+                </div>
+                <div class="audience-grid">
+                    <article class="audience-card owner" id="owners">
+                        <span class="audience-label">владельцам животных</span>
+                        <h2>Понять симптомы и не навредить питомцу ожиданием или самолечением</h2>
+                        <p>
+                            Короткие курсы и чек-листы помогают разобраться в зуде, отитах, выпадении шерсти и подготовиться к приему так, чтобы врачу было легче поставить диагноз.
+                        </p>
+                        <ul class="check-list">
+                            <li>что считать тревожным симптомом</li>
+                            <li>какие фото, видео и факты нужны врачу</li>
+                            <li>как вести дневник зуда, питания и лечения</li>
+                            <li>какие ошибки дома чаще всего мешают терапии</li>
+                        </ul>
+                        <div class="audience-actions">
+                            <a class="btn btn-coral" href="#products">Материалы для владельцев</a>
+                            <a class="btn btn-secondary" href="https://t.me/Alevtina_vet" target="_blank" rel="noopener noreferrer">Задать вопрос</a>
+                        </div>
+                    </article>
+                    <article class="audience-card doctor" id="doctors">
+                        <span class="audience-label">ветеринарным специалистам</span>
+                        <h2>Разбирать дерматологических пациентов системно, а не по случайным схемам</h2>
+                        <p>
+                            Профессиональные вебинары, практикумы и супервизия нужны врачам общей практики, молодым специалистам и коллегам, которые хотят усилить дерматологический прием.
+                        </p>
+                        <ul class="check-list">
+                            <li>алгоритм первичного дерматологического пациента</li>
+                            <li>цитология кожи и уха в ежедневной практике</li>
+                            <li>клинические случаи: зуд, отиты, алопеции</li>
+                            <li>разбор сложных пациентов и врачебных решений</li>
+                        </ul>
+                        <div class="audience-actions">
+                            <a class="btn btn-primary" href="#pro-track">Профессиональный трек</a>
+                            <a class="btn btn-secondary" href="mailto:alevtina-skin@mail.ru?subject=Профессиональное%20обучение%20по%20дерматологии">Написать о вебинарах</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="band" id="products" aria-labelledby="products-title">
+            <div class="container">
+                <div class="section-intro">
+                    <div>
+                        <p class="section-kicker">каталог запуска</p>
+                        <h2 class="section-title" id="products-title">Первые продукты можно запускать по трекам</h2>
+                    </div>
+                    <p class="section-copy">
+                        Сейчас лучше собрать интерес и предзапись. После утверждения тем подключаются оплата, доступ к урокам и личный кабинет или внешний LMS.
+                    </p>
+                </div>
+
+                <div class="tabs" role="tablist" aria-label="Треки программ">
+                    <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="panel-owners" data-tab="owners">Владельцам</button>
+                    <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-doctors" data-tab="doctors">Врачам</button>
+                    <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-breeders" data-tab="breeders">Заводчикам и грумерам</button>
+                </div>
+
+                <div class="product-panel active" id="panel-owners" role="tabpanel" data-panel="owners">
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag coral">первый курс</span>
+                                <span class="status">предзапись</span>
+                            </div>
+                            <h3>Зуд у собаки: что делать владельцу</h3>
+                            <p>Понятный маршрут от первых симптомов до подготовки к приему. Без обещаний вылечить по видео, но с ясными ориентирами.</p>
+                            <ul>
+                                <li>красные флаги и срочные ситуации</li>
+                                <li>фото, видео, дневник симптомов</li>
+                                <li>питание, обработки, домашние ошибки</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">видео + чек-лист</span>
+                                <a class="btn btn-coral" href="owners/itching-dog.html">Подробнее</a>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag blue">кошки</span>
+                                <span class="status">скоро</span>
+                            </div>
+                            <h3>Кошка вылизывается, чешется или теряет шерсть</h3>
+                            <p>Модуль для владельцев кошек: как не списать дерматологию на стресс и когда нужна очная диагностика.</p>
+                            <ul>
+                                <li>симптомы, которые легко пропустить</li>
+                                <li>как подготовить кошку к осмотру</li>
+                                <li>что сообщить врачу до консультации</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">гайд + памятка</span>
+                                <a class="btn btn-secondary" href="mailto:alevtina-skin@mail.ru?subject=Курс%20для%20владельцев%20кошек">Узнать о запуске</a>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag">подготовка</span>
+                                <span class="status">мини-гайд</span>
+                            </div>
+                            <h3>Как собрать историю болезни для дерматолога</h3>
+                            <p>Короткий материал, который экономит время владельцу и врачу: история, фото, видео, обработки, корм, лекарства.</p>
+                            <ul>
+                                <li>шаблон дневника симптомов</li>
+                                <li>как фотографировать кожу и уши</li>
+                                <li>какие документы взять на прием</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">чек-лист</span>
+                                <a class="btn btn-secondary" href="https://t.me/Alevtina_vet" target="_blank" rel="noopener noreferrer">Получить первым</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="product-panel" id="panel-doctors" role="tabpanel" data-panel="doctors">
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag plum">вебинар</span>
+                                <span class="status">пилот</span>
+                            </div>
+                            <h3>Алгоритм первичного дерматологического пациента</h3>
+                            <p>Для врачей общей практики: как структурировать прием, какие вопросы задать, где не торопиться с терапией.</p>
+                            <ul>
+                                <li>анамнез и осмотр без лишнего шума</li>
+                                <li>первичные дифференциалы</li>
+                                <li>план диагностики и коммуникация с владельцем</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">живой эфир + запись</span>
+                                <a class="btn btn-primary" href="doctors/dermatology-first-appointment.html">Подробнее</a>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag blue">практикум</span>
+                                <span class="status">скоро</span>
+                            </div>
+                            <h3>Цитология кожи и уха: базовый практикум</h3>
+                            <p>Мини-курс для врачей, которым нужен рабочий фундамент по мазкам-отпечаткам, скотч-тестам и интерпретации.</p>
+                            <ul>
+                                <li>когда и какой материал брать</li>
+                                <li>типичные находки и ошибки</li>
+                                <li>как связать цитологию с лечением</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">уроки + случаи</span>
+                                <a class="btn btn-secondary" href="https://t.me/Alevtina_vet" target="_blank" rel="noopener noreferrer">Написать</a>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag coral">разборы</span>
+                                <span class="status">клуб</span>
+                            </div>
+                            <h3>Клинические случаи: зуд, отиты, алопеции</h3>
+                            <p>Формат для регулярной практики: короткая теория, история пациента, решения, ошибки и обсуждение вопросов.</p>
+                            <ul>
+                                <li>реальные клинические сценарии</li>
+                                <li>логика назначений и контроля</li>
+                                <li>обсуждение сложных решений</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">закрытая группа</span>
+                                <a class="btn btn-secondary" href="mailto:alevtina-skin@mail.ru?subject=Клуб%20клинических%20разборов">В лист ожидания</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="product-panel" id="panel-breeders" role="tabpanel" data-panel="breeders">
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag">питомники</span>
+                                <span class="status">идея</span>
+                            </div>
+                            <h3>Кожные проблемы в питомнике: ранние признаки и маршрутизация</h3>
+                            <p>Практичный вебинар для заводчиков: что отслеживать, как вести журнал и когда подключать врача.</p>
+                            <ul>
+                                <li>зуд, отиты, перхоть, выпадение шерсти</li>
+                                <li>гигиена и обработка среды</li>
+                                <li>документы и коммуникация с владельцами</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">вебинар</span>
+                                <a class="btn btn-secondary" href="mailto:alevtina-skin@mail.ru?subject=Вебинар%20для%20заводчиков">Обсудить тему</a>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag blue">груминг</span>
+                                <span class="status">скоро</span>
+                            </div>
+                            <h3>Когда грумеру стоит рекомендовать дерматолога</h3>
+                            <p>Границы ответственности, тревожные признаки и корректная коммуникация с владельцем без постановки диагнозов.</p>
+                            <ul>
+                                <li>что можно заметить во время груминга</li>
+                                <li>как описать проблему владельцу</li>
+                                <li>когда нельзя продолжать процедуру</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">мини-курс</span>
+                                <a class="btn btn-secondary" href="https://t.me/Alevtina_vet" target="_blank" rel="noopener noreferrer">В список интереса</a>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="tag plum">совместно</span>
+                                <span class="status">пилот</span>
+                            </div>
+                            <h3>Дерматологический чек-лист для команды ухода</h3>
+                            <p>Единый язык между владельцем, грумером, заводчиком и врачом: симптомы, сроки, фото и история.</p>
+                            <ul>
+                                <li>шаблон наблюдения</li>
+                                <li>границы домашних рекомендаций</li>
+                                <li>как не затягивать обращение</li>
+                            </ul>
+                            <div class="product-footer">
+                                <span class="status">PDF + видео</span>
+                                <a class="btn btn-secondary" href="mailto:alevtina-skin@mail.ru?subject=Чек-лист%20для%20команды%20ухода">Запросить</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pro-track" aria-labelledby="pro-track-title">
+            <div class="container">
+                <div class="program-layout">
+                    <div class="program-main">
+                        <p class="section-kicker">профессиональный трек</p>
+                        <h2 class="section-title" id="pro-track-title">Будущая школа дерматологии может начаться с серии практических вебинаров</h2>
+                        <p class="section-copy">
+                            Не обязательно сразу строить большую академию. Сильный запуск для врачей - это понятная серия: алгоритм приема, цитология, типовые случаи и супервизия сложных пациентов.
+                        </p>
+                        <ul class="module-list">
+                            <li>
+                                <strong>01</strong>
+                                <span>Первичный дерматологический пациент: анамнез, осмотр, список дифференциалов.</span>
+                            </li>
+                            <li>
+                                <strong>02</strong>
+                                <span>Цитология кожи и уха: техника забора, частые находки, ограничения метода.</span>
+                            </li>
+                            <li>
+                                <strong>03</strong>
+                                <span>Зуд и отит: как выстроить маршрут диагностики и не потерять владельца.</span>
+                            </li>
+                            <li>
+                                <strong>04</strong>
+                                <span>Клинические разборы: что было сделано, почему, как контролировать динамику.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="program-side">
+                        <div class="side-note">
+                            <h3>Для кого</h3>
+                            <p>Врачи общей практики, молодые специалисты, ассистенты с клиническим ростом, врачи, которые часто видят зуд, отиты и алопеции.</p>
+                        </div>
+                        <div class="side-note">
+                            <h3>Что продается лучше</h3>
+                            <p>Не абстрактная теория, а конкретная польза: алгоритмы, случаи, шаблоны, ошибки, записи эфиров и возможность задать вопрос.</p>
+                        </div>
+                        <div class="side-note">
+                            <h3>Следующий уровень</h3>
+                            <p>Закрытая группа или клуб с регулярными разборами, как у сильных экспертных школ: меньше массовости, выше доверие и LTV.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="band" id="doctor" aria-labelledby="doctor-title">
+            <div class="container">
+                <div class="doctor-layout">
+                    <div class="doctor-photo">
+                        <img src="dr-alya.jpeg" alt="Алевтина Геннадьевна, ветеринарный врач-дерматолог" loading="lazy">
+                    </div>
+                    <div class="doctor-copy">
+                        <div>
+                            <p class="section-kicker">эксперт платформы</p>
+                            <h2 class="section-title" id="doctor-title">Алевтина Геннадьевна</h2>
+                            <p class="section-copy">
+                                Ветеринарный врач, дерматолог-цитолог. Работает с аллергическими и дерматологическими заболеваниями у собак и кошек, объясняет сложные решения понятным языком и может развивать обучение как для владельцев, так и для коллег.
+                            </p>
+                        </div>
+                        <div class="credential-row">
+                            <div class="credential">
+                                <strong>14+ лет практики</strong>
+                                <span>ежедневный клинический опыт с животными и владельцами</span>
+                            </div>
+                            <div class="credential">
+                                <strong>дерматология и цитология</strong>
+                                <span>зуд, отиты, аллергия, алопеции, кожные инфекции</span>
+                            </div>
+                            <div class="credential">
+                                <strong>профессиональное развитие</strong>
+                                <span>обучение у профильных специалистов, включая Vetderm-направление</span>
+                            </div>
+                        </div>
+                        <div class="certificate-grid" aria-label="Сертификаты">
+                            <button class="certificate-button" type="button" data-certificate="certificate_canine.jpg" data-title="Сертификат по дерматологии собак">
+                                <img src="certificate_canine.jpg" alt="Сертификат по дерматологии собак" loading="lazy">
+                                <span>Дерматология собак</span>
+                            </button>
+                            <button class="certificate-button" type="button" data-certificate="certificate_feline.jpg" data-title="Сертификат по дерматологии кошек">
+                                <img src="certificate_feline.jpg" alt="Сертификат по дерматологии кошек" loading="lazy">
+                                <span>Дерматология кошек</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formats" aria-labelledby="formats-title">
+            <div class="container">
+                <div class="section-intro">
+                    <div>
+                        <p class="section-kicker">форматы монетизации</p>
+                        <h2 class="section-title" id="formats-title">Не один курс, а линейка продуктов</h2>
+                    </div>
+                    <p class="section-copy">
+                        Так строятся сильные экспертные проекты: бесплатный контент создает доверие, недорогие продукты дают первый опыт, профессиональные форматы повышают средний чек.
+                    </p>
+                </div>
+                <div class="format-grid">
+                    <article class="format-card">
+                        <span class="format-number">1</span>
+                        <h3>Бесплатные материалы</h3>
+                        <p>Чек-листы, короткие статьи, разборы симптомов, подготовка к приему. Их задача - доверие и подписка.</p>
+                    </article>
+                    <article class="format-card">
+                        <span class="format-number">2</span>
+                        <h3>Мини-гайды и записи</h3>
+                        <p>Небольшие платные продукты для владельцев и заводчиков: доступная цена, быстрый результат, понятная тема.</p>
+                    </article>
+                    <article class="format-card">
+                        <span class="format-number">3</span>
+                        <h3>Вебинары для врачей</h3>
+                        <p>Живые эфиры с записью, клиническими примерами, ответами на вопросы и сертификатом участия, если это будет уместно.</p>
+                    </article>
+                    <article class="format-card">
+                        <span class="format-number">4</span>
+                        <h3>Клуб и супервизия</h3>
+                        <p>Регулярные закрытые разборы для специалистов: самый сильный формат для доверия, повторных продаж и профессионального комьюнити.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="band" id="consulting" aria-labelledby="consulting-title">
+            <div class="container">
+                <div class="section-intro">
+                    <div>
+                        <p class="section-kicker">консультации и разборы</p>
+                        <h2 class="section-title" id="consulting-title">Когда обучение не заменяет личный случай</h2>
+                    </div>
+                    <p class="section-copy">
+                        Курсы помогают ориентироваться, но диагноз и лечение требуют врача. Для коллег отдельным продуктом может стать разбор сложного пациента или супервизия.
+                    </p>
+                </div>
+                <div class="consult-grid">
+                    <article class="consult-card highlight">
+                        <h3>Консультация владельца</h3>
+                        <p>Разбор истории, фото, видео, анализов и дальнейшего маршрута диагностики.</p>
+                        <ul>
+                            <li>сбор анамнеза</li>
+                            <li>план дальнейших действий</li>
+                            <li>ответы на вопросы владельца</li>
+                        </ul>
+                        <div class="price">от 2 500 ₽</div>
+                    </article>
+                    <article class="consult-card">
+                        <h3>Повторный контроль</h3>
+                        <p>Оценка динамики после назначений, корректировка вопросов и подготовка к следующему этапу.</p>
+                        <ul>
+                            <li>дневник симптомов</li>
+                            <li>контроль фото и реакции</li>
+                            <li>следующие шаги</li>
+                        </ul>
+                        <div class="price">1 800 ₽</div>
+                    </article>
+                    <article class="consult-card">
+                        <h3>Профессиональный разбор</h3>
+                        <p>Формат для ветеринарных специалистов: обсудить клинический случай, логику диагностики и варианты ведения.</p>
+                        <ul>
+                            <li>структура случая</li>
+                            <li>дифференциалы и ограничения</li>
+                            <li>коммуникация с владельцем</li>
+                        </ul>
+                        <div class="price">по запросу</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="hosting" aria-labelledby="hosting-title">
+            <div class="container">
+                <div class="section-intro">
+                    <div>
+                        <p class="section-kicker">как размещать обучение</p>
+                        <h2 class="section-title" id="hosting-title">Начинаем дешево, платформу строим только после спроса</h2>
+                    </div>
+                    <p class="section-copy">
+                        GitHub Pages оставляем как бесплатный публичный сайт на alevtina-skin.ru. Сначала собираем заявки и вручную проверяем платежеспособный спрос. Потом либо строим свой минимальный кабинет, либо подключаем российскую LMS.
+                    </p>
+                </div>
+                <div class="hosting-grid">
+                    <article class="hosting-card recommended">
+                        <span class="tag">самый дешевый старт</span>
+                        <h3>Ручной пилот без подписки на LMS</h3>
+                        <p>Первый курс или вебинар можно продать через лендинг, Telegram/email и ручное подтверждение оплаты. Это некрасиво, но дешево и быстро проверяет спрос.</p>
+                        <ul>
+                            <li>заявки с сайта идут в Telegram или email</li>
+                            <li>оплата и доступ выдаются вручную</li>
+                            <li>видео и PDF не храним в GitHub</li>
+                        </ul>
+                        <div class="hosting-verdict">Минимальный фиксированный расход.</div>
+                    </article>
+                    <article class="hosting-card">
+                        <span class="tag blue">строим свое</span>
+                        <h3>Собственный MVP на school.alevtina-skin.ru</h3>
+                        <p>После первых продаж можно сделать небольшой кабинет: логин, курсы, уроки, доступы и админку. Платежи сначала отмечаются вручную, затем подключается ЮKassa или CloudPayments.</p>
+                        <ul>
+                            <li>Django, PostgreSQL, nginx, российский VPS</li>
+                            <li>админ выдает доступы и видит учеников</li>
+                            <li>ниже ежемесячные расходы, больше ответственности</li>
+                        </ul>
+                        <div class="hosting-verdict">Лучший баланс цены и контроля.</div>
+                    </article>
+                    <article class="hosting-card">
+                        <span class="tag plum">позже</span>
+                        <h3>Российская LMS, если нужна скорость</h3>
+                        <p>GetCourse или аналог имеет смысл, когда продажи уже есть или важнее быстро получить CRM, рассылки, вебинары, оплаты и воронки без разработки своего кабинета.</p>
+                        <ul>
+                            <li>быстрее запуск полноценной школы</li>
+                            <li>рублевые платежи и готовые инструменты продаж</li>
+                            <li>ежемесячная стоимость выше, контроль ниже</li>
+                        </ul>
+                        <div class="hosting-verdict">Подключать, если экономика сходится.</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+            <div class="container">
+                <div class="section-intro">
+                    <div>
+                        <p class="section-kicker">доверие</p>
+                        <h2 class="section-title" id="reviews-title">Отзывы о врачебной практике</h2>
+                    </div>
+                    <p class="section-copy">
+                        Для профессионального трека позже понадобятся отзывы коллег и участников вебинаров. Пока базу доверия дают реальные владельцы пациентов.
+                    </p>
+                </div>
+                <div class="review-grid">
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>Алевтина Геннадьевна - прекрасный человек и доктор. Спасибо за терпение, доброту и профессионализм. Спасибо за помощь нашей Нике.</p>
+                        <span class="review-author">Лариса, Елена</span>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>Всегда объяснит каждую букву в назначениях, терпеливо выслушает и ответит на самые разные вопросы. Большое спасибо, доктор.</p>
+                        <span class="review-author">Анна</span>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>Прекрасный доктор, всегда с заботой и трепетным отношением к пациентам. Обращаемся исключительно к Алевтине Геннадьевне.</p>
+                        <span class="review-author">Анастасия</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-intro">
+                    <div>
+                        <p class="section-kicker">FAQ</p>
+                        <h2 class="section-title" id="faq-title">Вопросы перед запуском</h2>
+                    </div>
+                    <p class="section-copy">
+                        Сейчас это честный предзапуск: мы показываем направление, собираем спрос и не обещаем закрытый доступ до выбора платформы.
+                    </p>
+                </div>
+                <div class="faq-list">
+                    <article class="faq-item open">
+                        <button class="faq-question" type="button" aria-expanded="true">
+                            <span>Можно ли продавать курсы прямо на GitHub Pages?</span>
+                            <span aria-hidden="true">−</span>
+                        </button>
+                        <div class="faq-answer">
+                            GitHub Pages подходит для публичной страницы, SEO и предзаписи. Безопасные платежи, личные кабинеты и закрытые уроки лучше делать через внешний LMS или backend.
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Курсы для владельцев заменяют консультацию?</span>
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Нет. Они помогают понять симптомы, подготовиться к врачу и избежать грубых ошибок. Диагностика и лечение остаются задачей врача.
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Что может быть продуктом для ветеринарных специалистов?</span>
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Вебинары, записи, практикумы по цитологии, клинические разборы, закрытая группа, супервизия сложных случаев и серия занятий по алгоритму дерматологического приема.
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Что нужно подготовить перед настоящим запуском?</span>
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Утвердить первые темы, цены, форматы, медицинский дисклеймер, оферту, обработку персональных данных, способ оплаты, видео-хостинг и доступ к материалам.
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-layout">
+                    <div>
+                        <p class="section-kicker">первый запуск</p>
+                        <h2 class="section-title" id="cta-title">Собираем интерес к первым курсам, вебинарам и разборам</h2>
+                        <p class="section-copy">
+                            Напишите, кто вы: владелец, ветеринарный специалист, заводчик или грумер. Так проще выбрать первую тему, формат и уровень сложности.
+                        </p>
+                    </div>
+                    <div class="cta-actions">
+                        <a class="btn btn-coral" href="https://t.me/Alevtina_vet" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+                        <a class="btn btn-secondary" href="mailto:alevtina-skin@mail.ru?subject=Интерес%20к%20обучению%20Alevtina%20Skin%20Vet">Отправить email</a>
+                        <span>Оплата, личный кабинет и закрытый доступ будут подключены после утверждения продуктовой модели.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-layout">
+                <span>© 2026 Alevtina Skin Vet</span>
+                <div class="footer-links">
+                    <a href="mailto:alevtina-skin@mail.ru">alevtina-skin@mail.ru</a>
+                    <a href="https://t.me/Alevtina_vet" target="_blank" rel="noopener noreferrer">@Alevtina_vet</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="certificateLightbox" aria-hidden="true">
+        <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+            <div class="lightbox-header">
+                <p class="lightbox-title" id="lightboxTitle">Сертификат</p>
+                <button class="lightbox-close" type="button" id="lightboxClose" aria-label="Закрыть сертификат">×</button>
+            </div>
+            <div class="lightbox-body">
+                <img src="" alt="" id="lightboxImage">
+            </div>
+            <div class="lightbox-caption" id="lightboxCaption">Нажмите Esc или область вне окна, чтобы закрыть.</div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

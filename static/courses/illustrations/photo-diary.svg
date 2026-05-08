@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Фото-дневник симптомов</title>
+  <desc id="desc">Схема показывает, как делать фото и заметки для динамики кожного состояния.</desc>
+  <rect width="960" height="540" fill="#fbfcfb"/>
+  <rect x="52" y="50" width="856" height="440" rx="24" fill="#e7f4f7" stroke="#dce8e2"/>
+  <text x="90" y="114" fill="#111816" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Фото-дневник помогает врачу</text>
+  <text x="90" y="152" fill="#62716d" font-family="Inter, Arial, sans-serif" font-size="18">Одинаковый свет, расстояние и подписи важнее красивого кадра</text>
+  <g transform="translate(94 210)">
+    <rect width="210" height="190" rx="18" fill="#fff" stroke="#dce8e2"/>
+    <rect x="30" y="34" width="150" height="94" rx="12" fill="#0b7b86" opacity=".16"/>
+    <circle cx="105" cy="82" r="34" fill="#0b7b86" opacity=".65"/>
+    <text x="30" y="160" fill="#111816" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">День 1</text>
+  </g>
+  <g transform="translate(374 210)">
+    <rect width="210" height="190" rx="18" fill="#fff" stroke="#dce8e2"/>
+    <rect x="30" y="34" width="150" height="94" rx="12" fill="#e1aa38" opacity=".2"/>
+    <circle cx="105" cy="82" r="26" fill="#e1aa38" opacity=".75"/>
+    <text x="30" y="160" fill="#111816" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">День 7</text>
+  </g>
+  <g transform="translate(654 210)">
+    <rect width="210" height="190" rx="18" fill="#fff" stroke="#dce8e2"/>
+    <rect x="30" y="34" width="150" height="94" rx="12" fill="#0f6b55" opacity=".18"/>
+    <circle cx="105" cy="82" r="18" fill="#0f6b55" opacity=".75"/>
+    <text x="30" y="160" fill="#111816" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">День 14</text>
+  </g>
+  <path d="M320 302h36m-14-14l14 14-14 14M600 302h36m-14-14l14 14-14 14" fill="none" stroke="#62716d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

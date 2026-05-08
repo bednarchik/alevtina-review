@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Карта наблюдений при зуде</title>
+  <desc id="desc">Схема показывает, какие зоны и признаки владельцу стоит фиксировать перед приемом.</desc>
+  <rect width="960" height="540" fill="#fbfcfb"/>
+  <rect x="42" y="42" width="876" height="456" rx="24" fill="#e6f5ee" stroke="#dce8e2"/>
+  <text x="86" y="104" fill="#111816" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Что фиксировать при зуде</text>
+  <text x="86" y="142" fill="#62716d" font-family="Inter, Arial, sans-serif" font-size="18">Схема для владельца: не диагноз, а подготовка к врачу</text>
+  <g transform="translate(96 205)" fill="none" stroke="#0f6b55" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 90c42-60 126-62 174-14 22 22 33 51 29 81"/>
+    <path d="M83 95c-42-8-59 26-53 57 8 41 59 47 88 17"/>
+    <path d="M306 124c39 3 60 32 55 62-7 43-62 49-92 17"/>
+    <path d="M128 162c29 20 104 28 151-2"/>
+    <path d="M120 196l-36 82"/>
+    <path d="M279 196l38 82"/>
+    <path d="M170 206l-18 88"/>
+    <path d="M234 206l17 88"/>
+    <circle cx="148" cy="78" r="11" fill="#0f6b55"/>
+    <path d="M117 68c-25-18-44-17-58 5"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(520 185)">
+      <rect width="310" height="54" rx="10" fill="#fff"/>
+      <circle cx="28" cy="27" r="8" fill="#d75b49"/>
+      <text x="52" y="34" fill="#111816" font-size="18" font-weight="700">где чешет, лижет, грызет</text>
+    </g>
+    <g transform="translate(520 255)">
+      <rect width="310" height="54" rx="10" fill="#fff"/>
+      <circle cx="28" cy="27" r="8" fill="#e1aa38"/>
+      <text x="52" y="34" fill="#111816" font-size="18" font-weight="700">когда усиливается зуд</text>
+    </g>
+    <g transform="translate(520 325)">
+      <rect width="310" height="54" rx="10" fill="#fff"/>
+      <circle cx="28" cy="27" r="8" fill="#0b7b86"/>
+      <text x="52" y="34" fill="#111816" font-size="18" font-weight="700">есть ли запах, ранки, отит</text>
+    </g>
+    <g transform="translate(520 395)">
+      <rect width="310" height="54" rx="10" fill="#fff"/>
+      <circle cx="28" cy="27" r="8" fill="#67456d"/>
+      <text x="52" y="34" fill="#111816" font-size="18" font-weight="700">что уже давали или мазали</text>
+    </g>
+  </g>
+</svg>

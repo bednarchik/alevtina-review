@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 420" role="img" aria-labelledby="title desc">
+  <title id="title">Алгоритм первичного дерматологического приема</title>
+  <desc id="desc">Анимированная схема показывает последовательность приема: история, осмотр, минимальная база, первичный план, контроль.</desc>
+  <style>
+    svg { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f7fbf8; }
+    .title { fill: #111816; font-size: 28px; font-weight: 800; }
+    .note { fill: #62716d; font-size: 16px; }
+    .stage { fill: #fff; stroke: #dce8e2; stroke-width: 2; rx: 12; }
+    .num { fill: #0f6b55; font-size: 16px; font-weight: 800; }
+    .label { fill: #111816; font-size: 19px; font-weight: 800; }
+    .small { fill: #62716d; font-size: 14px; }
+    .line { stroke: #0f6b55; stroke-width: 5; stroke-linecap: round; stroke-dasharray: 1 18; animation: flow 2.2s linear infinite; }
+    .active { opacity: .96; }
+    .badge { fill: #e6f5ee; stroke: #0f6b55; stroke-width: 2; }
+    .warn { fill: #d75b49; opacity: .16; animation: warn 1.8s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -38; } }
+    @keyframes warn { 0%, 100% { opacity: .08; } 50% { opacity: .32; } }
+  </style>
+  <rect width="980" height="420" fill="#f7fbf8"/>
+  <text x="42" y="48" class="title">Первичный прием пациента с зудом</text>
+  <text x="42" y="78" class="note">Не перескакиваем к диагнозу: сначала история, осмотр и минимальная база.</text>
+
+  <path d="M154 210 H826" class="line"/>
+
+  <g class="active" transform="translate(42 130)">
+    <rect class="stage" width="170" height="160"/>
+    <circle class="badge" cx="36" cy="36" r="20"/>
+    <text x="31" y="42" class="num">1</text>
+    <text x="22" y="78" class="label">История</text>
+    <text x="22" y="108" class="small">возраст начала</text>
+    <text x="22" y="128" class="small">сезонность</text>
+    <text x="22" y="148" class="small">предыдущие схемы</text>
+  </g>
+
+  <g class="active s2" transform="translate(236 130)">
+    <rect class="stage" width="170" height="160"/>
+    <circle class="badge" cx="36" cy="36" r="20"/>
+    <text x="31" y="42" class="num">2</text>
+    <text x="22" y="78" class="label">Осмотр</text>
+    <text x="22" y="108" class="small">уши, лапы, пах</text>
+    <text x="22" y="128" class="small">хвост, живот</text>
+    <text x="22" y="148" class="small">шкала зуда</text>
+  </g>
+
+  <g class="active s3" transform="translate(430 130)">
+    <rect class="stage" width="170" height="160"/>
+    <circle class="badge" cx="36" cy="36" r="20"/>
+    <text x="31" y="42" class="num">3</text>
+    <text x="22" y="78" class="label">Минимум</text>
+    <text x="22" y="108" class="small">цитология</text>
+    <text x="22" y="128" class="small">соскобы</text>
+    <text x="22" y="148" class="small">блохи / отит</text>
+  </g>
+
+  <g class="active s4" transform="translate(624 130)">
+    <rect class="stage" width="170" height="160"/>
+    <circle class="badge" cx="36" cy="36" r="20"/>
+    <text x="31" y="42" class="num">4</text>
+    <text x="22" y="78" class="label">План</text>
+    <text x="22" y="108" class="small">контроль зуда</text>
+    <text x="22" y="128" class="small">инфекция</text>
+    <text x="22" y="148" class="small">паразиты</text>
+  </g>
+
+  <g class="active s5" transform="translate(818 130)">
+    <rect class="stage" width="126" height="160"/>
+    <circle class="badge" cx="36" cy="36" r="20"/>
+    <text x="31" y="42" class="num">5</text>
+    <text x="22" y="78" class="label">Контроль</text>
+    <text x="22" y="108" class="small">динамика</text>
+    <text x="22" y="128" class="small">цитология</text>
+    <text x="22" y="148" class="small">следующий шаг</text>
+  </g>
+
+  <g transform="translate(350 322)">
+    <rect x="0" y="0" width="280" height="54" rx="12" class="warn"/>
+    <text x="22" y="34" class="small">Атопия - диагноз исключения, а не первая догадка.</text>
+  </g>
+</svg>

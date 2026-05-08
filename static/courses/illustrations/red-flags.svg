@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Красные флаги при кожных симптомах</title>
+  <desc id="desc">Инфографика о признаках, при которых владельцу стоит быстрее обратиться к врачу.</desc>
+  <rect width="960" height="540" fill="#fbfcfb"/>
+  <rect x="48" y="48" width="864" height="444" rx="26" fill="#fff0ed" stroke="#dce8e2"/>
+  <text x="90" y="112" fill="#111816" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Когда не ждать</text>
+  <text x="90" y="150" fill="#62716d" font-family="Inter, Arial, sans-serif" font-size="18">Эти признаки не ставят диагноз, но требуют быстрой связи с врачом</text>
+  <g transform="translate(98 208)" font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect width="330" height="74" rx="14" fill="#fff"/>
+      <path d="M34 17l22 40H12z" fill="#d75b49"/>
+      <text x="78" y="33" fill="#111816" font-size="18" font-weight="800">кровь, гной, мокнутие</text>
+      <text x="78" y="56" fill="#62716d" font-size="15">особенно если зона быстро растет</text>
+    </g>
+    <g transform="translate(0 96)">
+      <rect width="330" height="74" rx="14" fill="#fff"/>
+      <circle cx="34" cy="37" r="22" fill="#d75b49"/>
+      <text x="78" y="33" fill="#111816" font-size="18" font-weight="800">сильная боль или вялость</text>
+      <text x="78" y="56" fill="#62716d" font-size="15">кожа может быть не единственной проблемой</text>
+    </g>
+    <g transform="translate(0 192)">
+      <rect width="330" height="74" rx="14" fill="#fff"/>
+      <rect x="16" y="19" width="38" height="38" rx="8" fill="#d75b49"/>
+      <text x="78" y="33" fill="#111816" font-size="18" font-weight="800">отек морды или дыхание</text>
+      <text x="78" y="56" fill="#62716d" font-size="15">повод для срочной помощи</text>
+    </g>
+  </g>
+  <g transform="translate(510 218)" fill="none" stroke="#d75b49" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M164 0l164 284H0z" fill="#fff" stroke="#d75b49"/>
+    <path d="M164 86v86"/>
+    <circle cx="164" cy="218" r="10" fill="#d75b49"/>
+  </g>
+</svg>

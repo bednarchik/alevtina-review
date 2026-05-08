@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">Цикл зуда у собаки</title>
+  <desc id="desc">Анимированная схема показывает, как зуд приводит к расчесам, воспалению, инфекции и повторному усилению зуда.</desc>
+  <style>
+    :root { color-scheme: light; }
+    svg { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f7fbf8; }
+    .title { fill: #111816; font-size: 28px; font-weight: 800; }
+    .note { fill: #62716d; font-size: 16px; }
+    .card { fill: #fff; stroke: #dce8e2; stroke-width: 2; rx: 14; }
+    .label { fill: #111816; font-size: 20px; font-weight: 800; }
+    .small { fill: #62716d; font-size: 14px; }
+    .arrow { fill: none; stroke: #0f6b55; stroke-width: 5; stroke-linecap: round; stroke-dasharray: 16 14; animation: dash 2.8s linear infinite; }
+    .pulse { opacity: .96; }
+    .spark { fill: #d75b49; opacity: .25; animation: blink 1.4s ease-in-out infinite; }
+    .dog { fill: #e1aa38; stroke: #111816; stroke-width: 4; }
+    .itch { fill: none; stroke: #d75b49; stroke-width: 5; stroke-linecap: round; animation: scratch .55s ease-in-out infinite alternate; }
+    @keyframes dash { to { stroke-dashoffset: -60; } }
+    @keyframes blink { 0%, 100% { opacity: .15; } 50% { opacity: .7; } }
+    @keyframes scratch { from { transform: translateX(-2px); } to { transform: translateX(8px); } }
+  </style>
+  <rect width="920" height="420" fill="#f7fbf8"/>
+  <text x="40" y="48" class="title">Почему зуд часто возвращается</text>
+  <text x="40" y="78" class="note">Задача курса - разорвать цикл, а не просто намазать одно пятно.</text>
+
+  <g transform="translate(382 118)">
+    <ellipse cx="72" cy="126" rx="56" ry="34" class="dog"/>
+    <circle cx="28" cy="100" r="28" class="dog"/>
+    <path d="M-2 91 L-24 78 L-18 110 Z" class="dog"/>
+    <circle cx="18" cy="96" r="4" fill="#111816"/>
+    <path d="M32 106 Q44 116 58 108" fill="none" stroke="#111816" stroke-width="4" stroke-linecap="round"/>
+    <path d="M104 112 Q142 92 154 122" fill="none" stroke="#111816" stroke-width="5" stroke-linecap="round"/>
+    <path d="M42 156 L34 190 M84 158 L86 192 M112 152 L124 184" stroke="#111816" stroke-width="6" stroke-linecap="round"/>
+    <g class="itch">
+      <path d="M118 72 q22 -22 44 0"/>
+      <path d="M132 48 q24 -22 48 0"/>
+      <path d="M152 84 q22 -20 44 2"/>
+    </g>
+    <circle cx="138" cy="75" r="52" class="spark"/>
+  </g>
+
+  <path d="M246 125 C326 64 438 46 542 84" class="arrow"/>
+  <path d="M670 136 C744 194 740 292 662 340" class="arrow"/>
+  <path d="M510 356 C416 386 292 352 234 282" class="arrow"/>
+  <path d="M186 236 C122 190 130 126 194 96" class="arrow"/>
+
+  <g class="pulse" transform="translate(42 112)">
+    <rect class="card" width="210" height="92"/>
+    <text x="20" y="36" class="label">1. Зуд</text>
+    <text x="20" y="62" class="small">собака лижет, чешет,</text>
+    <text x="20" y="80" class="small">кусает кожу</text>
+  </g>
+  <g class="pulse pulse2" transform="translate(594 86)">
+    <rect class="card" width="244" height="98"/>
+    <text x="20" y="38" class="label">2. Травма кожи</text>
+    <text x="20" y="66" class="small">расчесы и повреждение</text>
+    <text x="20" y="84" class="small">кожного барьера</text>
+  </g>
+  <g class="pulse pulse3" transform="translate(606 282)">
+    <rect class="card" width="242" height="94"/>
+    <text x="20" y="36" class="label">3. Воспаление</text>
+    <text x="20" y="64" class="small">покраснение, запах,</text>
+    <text x="20" y="82" class="small">вторичная инфекция</text>
+  </g>
+  <g class="pulse pulse4" transform="translate(52 278)">
+    <rect class="card" width="230" height="96"/>
+    <text x="20" y="38" class="label">4. Новый зуд</text>
+    <text x="20" y="66" class="small">симптом усиливается,</text>
+    <text x="20" y="84" class="small">цикл повторяется</text>
+  </g>
+</svg>

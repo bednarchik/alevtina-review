@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Подготовка к приему</title>
+  <desc id="desc">Иллюстрация показывает документы, фото, вопросы и список препаратов перед приемом.</desc>
+  <rect width="960" height="540" fill="#fbfcfb"/>
+  <rect x="48" y="48" width="864" height="444" rx="24" fill="#e6f5ee" stroke="#dce8e2"/>
+  <text x="92" y="112" fill="#111816" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Перед приемом соберите пакет</text>
+  <text x="92" y="150" fill="#62716d" font-family="Inter, Arial, sans-serif" font-size="18">Чем меньше хаоса в данных, тем полезнее консультация</text>
+  <g transform="translate(118 220)" font-family="Inter, Arial, sans-serif">
+    <rect width="150" height="170" rx="14" fill="#fff" stroke="#dce8e2"/>
+    <path d="M44 54h62M44 84h62M44 114h42" stroke="#0f6b55" stroke-width="8" stroke-linecap="round"/>
+    <text x="24" y="210" fill="#111816" font-size="18" font-weight="800">анализы</text>
+  </g>
+  <g transform="translate(324 220)" font-family="Inter, Arial, sans-serif">
+    <rect width="150" height="170" rx="14" fill="#fff" stroke="#dce8e2"/>
+    <rect x="34" y="44" width="82" height="64" rx="10" fill="#0b7b86" opacity=".2"/>
+    <circle cx="75" cy="76" r="20" fill="#0b7b86" opacity=".7"/>
+    <text x="32" y="210" fill="#111816" font-size="18" font-weight="800">фото</text>
+  </g>
+  <g transform="translate(530 220)" font-family="Inter, Arial, sans-serif">
+    <rect width="150" height="170" rx="14" fill="#fff" stroke="#dce8e2"/>
+    <path d="M38 60h74M38 92h74M38 124h48" stroke="#d75b49" stroke-width="8" stroke-linecap="round"/>
+    <text x="18" y="210" fill="#111816" font-size="18" font-weight="800">лекарства</text>
+  </g>
+  <g transform="translate(736 220)" font-family="Inter, Arial, sans-serif">
+    <rect width="150" height="170" rx="14" fill="#fff" stroke="#dce8e2"/>
+    <circle cx="75" cy="69" r="28" fill="#e1aa38" opacity=".75"/>
+    <path d="M75 108v28" stroke="#e1aa38" stroke-width="8" stroke-linecap="round"/>
+    <text x="26" y="210" fill="#111816" font-size="18" font-weight="800">вопросы</text>
+  </g>
+</svg>
