@@ -4,170 +4,133 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
-    <title>Alevtina School - черновик курсов</title>
+    <title>Инструкция для ревью Alevtina School</title>
     <link rel="icon" href="static/courses/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="static/courses/app.css">
     <style>
-        .review-note { background: #fff; border: 1px solid #dce8e2; border-radius: 8px; padding: 18px; margin-top: 22px; }
-        .course { padding: 56px 0; border-top: 1px solid #dce8e2; }
-        .course-head { display: grid; gap: 10px; margin-bottom: 24px; }
-        .course-head span { color: #0f6b55; font-weight: 800; }
-        .lesson { margin: 28px 0; padding: 24px; border: 1px solid #dce8e2; border-radius: 8px; background: #fff; }
-        .lesson .body { margin-top: 18px; }
-        .body br + br { display: block; margin-top: 10px; content: ""; }
+        .review-page { background: #fbfcfb; }
+        .review-hero { padding: 76px 0 44px; color: #fff; background: #0f6b55; }
+        .review-hero h1 { max-width: 920px; }
+        .review-section { padding: 48px 0; border-top: 1px solid #dce8e2; }
+        .review-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+        .review-card { padding: 22px; border: 1px solid #dce8e2; border-radius: 8px; background: #fff; }
+        .review-card h3 { margin-top: 0; }
+        .step-list { display: grid; gap: 12px; margin: 22px 0 0; padding: 0; list-style: none; }
+        .step-list li { padding: 16px; border: 1px solid #dce8e2; border-radius: 8px; background: #fff; }
+        .warning { border-color: #ead7a8; background: #fbf6e8; }
+        .course-preview { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 22px; align-items: start; }
+        .module-list { columns: 2; padding-left: 18px; }
+        .credential-note { padding: 18px; border: 1px solid #ead7a8; border-radius: 8px; background: #fbf6e8; }
+        @media (max-width: 860px) {
+            .review-grid,
+            .course-preview { grid-template-columns: 1fr; }
+            .module-list { columns: 1; }
+        }
     </style>
 </head>
-<body>
+<body class="review-page">
     <main>
-        <section class="hero">
-            <div class="container hero-inner">
-                <p class="eyebrow">Черновик для ревью</p>
-                <h1>Alevtina School</h1>
-                <p class="lead">Это файл для чтения и обсуждения. Здесь собраны текущие черновики курсов, уроки и иллюстрации. До публикации нужен медицинский и редакционный апрув.</p>
+        <section class="review-hero">
+            <div class="container">
+                <p class="eyebrow">закрытое ревью</p>
+                <h1>Alevtina School: что смотреть на учебной платформе</h1>
+                <p class="lead">Основной сайт остается на GitHub Pages. Учебный кабинет уже работает отдельно на Radore VPS: курсы, уроки, прогресс, тесты, заявки на оплату и админка.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="https://school.alevtina-skin.ru/" target="_blank" rel="noopener noreferrer">Открыть платформу</a>
+                    <a class="btn secondary" href="index.html">Вернуться к витрине</a>
+                </div>
             </div>
         </section>
-        <div class="container">
-            <div class="review-note">
-                <strong>Важно:</strong> это не опубликованный сайт и не рабочая платежная платформа. Это удобная версия для просмотра через браузер после распаковки ZIP.
+
+        <section class="review-section">
+            <div class="container">
+                <div class="credential-note">
+                    <strong>Пароли не размещены на этой публичной GitHub-странице.</strong>
+                    Передайте Алевтине Геннадьевне логины отдельно в Telegram. Это снижает риск, что случайный посетитель увидит доступ к черновику.
+                </div>
             </div>
-            
-    <section class="course">
-        <div class="course-head">
-            <span>Ветеринарные специалисты</span>
-            <h2>Алгоритм первичного дерматологического пациента</h2>
-            <p>Черновой профессиональный модуль для врачей: история, минимальная база, коммуникация и первые решения при зуде.</p>
-            <strong>4900 ₽</strong>
-        </div>
-        <div class="body">Практический мини-курс для ветеринарных специалистов: как структурировать первичный дерматологический прием пациента с зудом и не потерять базовые шаги.<br><br>Фокус MVP-версии: история болезни, шкала зуда, минимальная дерматологическая база, эктопаразиты, вторичная инфекция, отит, коммуникация с владельцем и критерии направления к дерматологу.<br><br>Материал подготовлен как черновик для экспертной редакции А.В.; до публикации его нужно сверить с авторской методикой и локальными протоколами клиники.</div>
-        
-    <article class="lesson">
-        <p class="eyebrow">Бесплатный урок</p>
-        <h3>1. Структура первичного приема</h3>
-        <p class="muted">Скелет консультации: от жалобы до минимальной дерматологической базы.</p>
-        <img class="lesson-illustration" src="static/courses/illustrations/doctor-algorithm.svg" alt="">
-        
-        <div class="animation-box">
-            <p class="eyebrow dark">Анимация урока</p>
-            <object class="lesson-animation" type="image/svg+xml" data="static/courses/animations/derm-workflow.svg">
-                <img src="static/courses/animations/derm-workflow.svg" alt="">
-            </object>
-        </div>
-        
-        <div class="body">Цель первичного приема - не угадать диагноз по фотографии, а собрать достаточные данные для первого безопасного плана.<br><br>Рабочий алгоритм<br><br>1. Сформулировать главную жалобу владельца: зуд, отит, алопеция, корки, запах, боль.<br>2. Оценить срочность: боль, выраженная инфекция, самотравматизация, системные признаки, быстрый отек.<br>3. Собрать историю: возраст начала, сезонность, локализация, динамика, обработки от эктопаразитов, питание, предыдущие препараты и ответ на них.<br>4. Оценить зуд по шкале 0-10 и отдельно уточнить ночной зуд.<br>5. Осмотреть все тело, не только &quot;главное пятно&quot;: уши, лапы, пах, живот, перианальную область, основание хвоста.<br>6. Собрать минимальную дерматологическую базу по показаниям: цитология кожи, цитология ушей при отите, соскобы, вычесывание на блох.<br>7. Сначала контролировать выявленные вторичные факторы, затем обсуждать хроническую аллергическую стратегию.<br><br>Коммуникация с владельцем<br><br>Полезно сразу проговорить, что зуд - симптом. Если у пациента есть хроническое аллергическое заболевание, задача часто состоит не в &quot;вылечить навсегда за один визит&quot;, а в устойчивом контроле, снижении обострений и понятном плане действий при рецидивах.<br><br>Источники для подготовки урока:<br>- AAHA, 2023 Management of Allergic Skin Diseases in Dogs and Cats Guidelines: https://www.aaha.org/resources/2023-aaha-management-of-allergic-skin-diseases-in-dogs-and-cats-guidelines/<br>- Merck Veterinary Manual, Atopic Dermatitis in Animals: https://www.merckvetmanual.com/integumentary-system/atopic-dermatitis/atopic-dermatitis-in-animals<br>- Merck Veterinary Manual, Otitis Externa in Animals: https://www.merckvetmanual.com/ear-disorders/otitis-externa/otitis-externa-in-animals<br>- Merck Veterinary Manual, Cutaneous Food Allergy in Animals: https://www.merckvetmanual.com/integumentary-system/food-allergy/cutaneous-food-allergy-in-animals</div>
-    </article>
-    
-    <article class="lesson">
-        <p class="eyebrow">Закрытый урок в кабинете</p>
-        <h3>2. Дифференциалы при зуде</h3>
-        <p class="muted">Как не перескочить к атопии до исключения частых причин.</p>
-        <img class="lesson-illustration" src="static/courses/illustrations/doctor-algorithm.svg" alt="">
-        
-        <div class="animation-box">
-            <p class="eyebrow dark">Анимация урока</p>
-            <object class="lesson-animation" type="image/svg+xml" data="static/courses/animations/derm-workflow.svg">
-                <img src="static/courses/animations/derm-workflow.svg" alt="">
-            </object>
-        </div>
-        
-        <div class="body">У пациента с зудом удобно держать в голове несколько групп причин.<br><br>Базовые группы<br><br>- эктопаразиты и блошиная аллергия;<br>- бактериальная или дрожжевая инфекция как усилитель зуда;<br>- отит как отдельный источник боли и зуда;<br>- неблагоприятная пищевая реакция;<br>- атопический дерматит;<br>- контактные реакции, аутоиммунные, эндокринные и другие заболевания по клинической картине.<br><br>Практический принцип<br><br>Атопический дерматит - диагноз исключения. Если сразу назвать пациента &quot;аллергиком&quot; и пропустить паразитов, отит или инфекцию, владелец быстро потеряет доверие, потому что зуд вернется.<br><br>Что фиксировать в карте<br><br>- локализацию и вид поражений;<br>- шкалу зуда;<br>- какие тесты сделаны сегодня;<br>- что найдено на цитологии;<br>- план контроля паразитов;<br>- критерии повторного визита;<br>- какие изменения владелец должен заметить и за какой срок.<br><br>Источники для подготовки урока:<br>- AAHA, 2023 Management of Allergic Skin Diseases in Dogs and Cats Guidelines: https://www.aaha.org/resources/2023-aaha-management-of-allergic-skin-diseases-in-dogs-and-cats-guidelines/<br>- Merck Veterinary Manual, Atopic Dermatitis in Animals: https://www.merckvetmanual.com/integumentary-system/atopic-dermatitis/atopic-dermatitis-in-animals<br>- Merck Veterinary Manual, Otitis Externa in Animals: https://www.merckvetmanual.com/ear-disorders/otitis-externa/otitis-externa-in-animals<br>- Merck Veterinary Manual, Cutaneous Food Allergy in Animals: https://www.merckvetmanual.com/integumentary-system/food-allergy/cutaneous-food-allergy-in-animals</div>
-    </article>
-    
-    <article class="lesson">
-        <p class="eyebrow">Закрытый урок в кабинете</p>
-        <h3>3. Цитология и базовые тесты</h3>
-        <p class="muted">Минимальная база перед долгими разговорами об аллергии.</p>
-        <img class="lesson-illustration" src="static/courses/illustrations/doctor-algorithm.svg" alt="">
-        
-        <div class="animation-box">
-            <p class="eyebrow dark">Анимация урока</p>
-            <object class="lesson-animation" type="image/svg+xml" data="static/courses/animations/derm-workflow.svg">
-                <img src="static/courses/animations/derm-workflow.svg" alt="">
-            </object>
-        </div>
-        
-        <div class="body">Минимальная дерматологическая база помогает отделить первичную проблему от вторичных усилителей.<br><br>Что часто входит в первый уровень<br><br>- цитология кожи с наиболее активных поражений;<br>- цитология ушей, если есть отит, запах, выделения или тряска головой;<br>- поверхностные или глубокие соскобы по показаниям;<br>- вычесывание на блох и оценка блошиной грязи;<br>- трихограмма или дополнительные тесты по клинической задаче.<br><br>Почему это важно<br><br>Вторичная бактериальная или дрожжевая инфекция может поддерживать зуд настолько сильно, что владелец будет считать основное лечение неэффективным. Если инфекция подтверждена, нужно объяснить, что это не обязательно &quot;главная причина&quot;, но ее нужно контролировать, чтобы увидеть реальную картину.<br><br>Повторный прием<br><br>На контроле важно не только спросить &quot;стало лучше?&quot;, а сравнить шкалу зуда, фото, цитологию и состояние ушей/кожи. Если протокол работал, но перестал работать, рекомендации AAHA предлагают вернуться к истории, осмотру и минимальной базе, а не автоматически усиливать терапию.<br><br>Источники для подготовки урока:<br>- AAHA, 2023 Management of Allergic Skin Diseases in Dogs and Cats Guidelines: https://www.aaha.org/resources/2023-aaha-management-of-allergic-skin-diseases-in-dogs-and-cats-guidelines/<br>- Merck Veterinary Manual, Atopic Dermatitis in Animals: https://www.merckvetmanual.com/integumentary-system/atopic-dermatitis/atopic-dermatitis-in-animals<br>- Merck Veterinary Manual, Otitis Externa in Animals: https://www.merckvetmanual.com/ear-disorders/otitis-externa/otitis-externa-in-animals<br>- Merck Veterinary Manual, Cutaneous Food Allergy in Animals: https://www.merckvetmanual.com/integumentary-system/food-allergy/cutaneous-food-allergy-in-animals</div>
-    </article>
-    
-    </section>
-    
-    <section class="course">
-        <div class="course-head">
-            <span>Владельцы</span>
-            <h2>Зуд у собаки: что делать владельцу</h2>
-            <p>Понятный курс для владельцев: когда зуд опасен, что записать до приема и почему самолечение часто затягивает проблему.</p>
-            <strong>2900 ₽</strong>
-        </div>
-        <div class="body">Курс для владельцев собак, у которых есть зуд, покраснение кожи, вылизывание лап, отиты или повторяющиеся проблемы с кожей.<br><br>Цель курса - не заменить прием врача, а помочь владельцу быстро понять, когда нужно ехать в клинику, какие данные собрать до визита и почему хронический зуд редко решается одной мазью или сменой корма.<br><br>Внутри: тревожные признаки, карта зуда, фото-дневник, подготовка к приему, частые ошибки домашнего лечения и понятная логика диагностики аллергических заболеваний кожи.</div>
-        
-    <article class="lesson">
-        <p class="eyebrow">Бесплатный урок</p>
-        <h3>1. Когда зуд требует срочной клиники</h3>
-        <p class="muted">Красные флаги, при которых не стоит ждать, пока пройдет само.</p>
-        <img class="lesson-illustration" src="static/courses/illustrations/red-flags.svg" alt="">
-        
-        <div class="animation-box">
-            <p class="eyebrow dark">Анимация урока</p>
-            <object class="lesson-animation" type="image/svg+xml" data="static/courses/animations/itch-cycle.svg">
-                <img src="static/courses/animations/itch-cycle.svg" alt="">
-            </object>
-        </div>
-        
-        <div class="body">Этот урок помогает решить главный вопрос: можно ли спокойно записаться на прием или нужна клиника в ближайшее время.<br><br>Срочно связывайтесь с ветеринарным врачом, если собака:<br><br>- расчесывает кожу до крови или не спит из-за зуда;<br>- сильно трясет головой, скулит при прикосновении к уху, есть запах или выделения из уха;<br>- быстро покрылась отеком морды, век или губ;<br>- стала вялой, отказывается от еды, появилась температура, рвота или диарея;<br>- имеет мокнущие болезненные участки кожи, гной, резкий запах;<br>- зудит после нового препарата, укуса насекомого, новой обработки или контакта с химией;<br>- щенок, пожилая собака или пациент с тяжелыми сопутствующими болезнями.<br><br>Почему это важно<br><br>Зуд - это симптом, а не диагноз. Его могут поддерживать блохи, клещи, бактериальная или дрожжевая инфекция, отит, пищевая реакция, атопический дерматит и другие причины. Если собака травмирует кожу, вторичная инфекция может быстро усилить воспаление и боль.<br><br>Что можно сделать до приема<br><br>1. Не наносите гормональные мази, человеческие кремы, спирт, йод или агрессивные антисептики без назначения.<br>2. Сфотографируйте поражения при хорошем свете.<br>3. Запишите, когда начался зуд, чем кормили, какие обработки от паразитов были и какие лекарства уже давали.<br>4. Если есть отек морды, затрудненное дыхание, слабость или резкое ухудшение состояния - это повод для неотложного обращения.<br><br>Важно: урок не заменяет очный осмотр. Он нужен, чтобы владелец не терял время в ситуациях, где промедление ухудшает состояние.<br><br>Источники для подготовки урока:<br>- AAHA, 2023 Management of Allergic Skin Diseases in Dogs and Cats Guidelines: https://www.aaha.org/resources/2023-aaha-management-of-allergic-skin-diseases-in-dogs-and-cats-guidelines/<br>- MSD Veterinary Manual, Atopic Dermatitis in Animals: https://www.merckvetmanual.com/integumentary-system/atopic-dermatitis/atopic-dermatitis-in-animals<br>- Merck Veterinary Manual, Flea Allergy Dermatitis in Dogs and Cats: https://www.merckvetmanual.com/integumentary-system/fleas-and-flea-allergy-dermatitis/flea-allergy-dermatitis-in-dogs-and-cats<br>- Purdue University Veterinary Hospital, Allergy Tips: https://vet.purdue.edu/hospital/small-animal/primary-care/tips/allergy-tips.php</div>
-    </article>
-    
-    <article class="lesson">
-        <p class="eyebrow">Закрытый урок в кабинете</p>
-        <h3>2. Карта зуда: что показывают лапы, уши, живот и хвост</h3>
-        <p class="muted">Как наблюдать за локализацией зуда и не делать преждевременный вывод о диагнозе.</p>
-        <img class="lesson-illustration" src="static/courses/illustrations/itch-map.svg" alt="">
-        
-        <div class="animation-box">
-            <p class="eyebrow dark">Анимация урока</p>
-            <object class="lesson-animation" type="image/svg+xml" data="static/courses/animations/itch-cycle.svg">
-                <img src="static/courses/animations/itch-cycle.svg" alt="">
-            </object>
-        </div>
-        
-        <div class="body">Локализация зуда помогает врачу, но сама по себе не ставит диагноз.<br><br>Что отмечать владельцу<br><br>- Лапы: вылизывание межпальцевых промежутков, покраснение, изменение цвета шерсти от слюны.<br>- Уши: тряска головой, запах, выделения, болезненность, повторяющиеся отиты.<br>- Морда и глаза: трение о мебель, покраснение вокруг губ или век.<br>- Подмышки, пах, живот: покраснение, сыпь, потемнение кожи, утолщение.<br>- Основание хвоста и спина: часто заставляет думать о блошиной проблеме, даже если блох не видно.<br><br>Почему нельзя полагаться только на место зуда<br><br>Аллергические заболевания, паразиты и вторичные инфекции могут выглядеть похоже. Например, у собаки с атопическим дерматитом часто бывают зуд, воспаление кожи и отиты, но перед этим врач должен исключить или контролировать другие причины, включая паразитов и инфекцию.<br><br>Домашнее задание<br><br>Сделайте простую карту: нарисуйте силуэт собаки и отметьте участки, где она чешется, лижет или кусает себя. Рядом поставьте оценку зуда от 0 до 10, где 0 - не чешется, 10 - чешется постоянно и не может нормально спать.<br><br>На приеме такая карта экономит время и помогает врачу увидеть динамику, особенно если проблема длится не один месяц.<br><br>Источники для подготовки урока:<br>- AAHA, 2023 Management of Allergic Skin Diseases in Dogs and Cats Guidelines: https://www.aaha.org/resources/2023-aaha-management-of-allergic-skin-diseases-in-dogs-and-cats-guidelines/<br>- MSD Veterinary Manual, Atopic Dermatitis in Animals: https://www.merckvetmanual.com/integumentary-system/atopic-dermatitis/atopic-dermatitis-in-animals<br>- Merck Veterinary Manual, Flea Allergy Dermatitis in Dogs and Cats: https://www.merckvetmanual.com/integumentary-system/fleas-and-flea-allergy-dermatitis/flea-allergy-dermatitis-in-dogs-and-cats<br>- Purdue University Veterinary Hospital, Allergy Tips: https://vet.purdue.edu/hospital/small-animal/primary-care/tips/allergy-tips.php</div>
-    </article>
-    
-    <article class="lesson">
-        <p class="eyebrow">Закрытый урок в кабинете</p>
-        <h3>3. Фото-дневник перед консультацией</h3>
-        <p class="muted">Что записывать, чтобы прием был продуктивнее и дешевле.</p>
-        <img class="lesson-illustration" src="static/courses/illustrations/photo-diary.svg" alt="">
-        
-        <div class="body">Хороший дневник не заменяет диагностику, но помогает врачу быстрее собрать историю.<br><br>Что фотографировать<br><br>- общий вид собаки;<br>- крупный план поражения кожи;<br>- уши, лапы, живот, пах, основание хвоста;<br>- упаковки кормов, лакомств, шампуней и препаратов;<br>- результат через 3-7 дней после назначенного лечения, если врач просил контроль.<br><br>Как фотографировать<br><br>Снимайте при дневном свете, без фильтров, с линейкой или монетой рядом для масштаба. Делайте один общий кадр и один крупный план. Не используйте вспышку, если она искажает цвет кожи.<br><br>Что записывать<br><br>- дата начала зуда;<br>- оценка зуда 0-10;<br>- где зуд сильнее;<br>- есть ли сезонность;<br>- чем обрабатывали от блох и клещей, дата последней обработки;<br>- все лекарства и дозировки, даже если давали один раз;<br>- корм, лакомства, добавки, жевательные продукты;<br>- были ли отиты, диарея, рвота, слезотечение.<br><br>Чего не делать<br><br>Не меняйте одновременно корм, шампунь, обработку, добавки и лекарства без плана. Если все изменить в один день, потом трудно понять, что помогло, а что навредило.<br><br>Источники для подготовки урока:<br>- AAHA, 2023 Management of Allergic Skin Diseases in Dogs and Cats Guidelines: https://www.aaha.org/resources/2023-aaha-management-of-allergic-skin-diseases-in-dogs-and-cats-guidelines/<br>- MSD Veterinary Manual, Atopic Dermatitis in Animals: https://www.merckvetmanual.com/integumentary-system/atopic-dermatitis/atopic-dermatitis-in-animals<br>- Merck Veterinary Manual, Flea Allergy Dermatitis in Dogs and Cats: https://www.merckvetmanual.com/integumentary-system/fleas-and-flea-allergy-dermatitis/flea-allergy-dermatitis-in-dogs-and-cats<br>- Purdue University Veterinary Hospital, Allergy Tips: https://vet.purdue.edu/hospital/small-animal/primary-care/tips/allergy-tips.php</div>
-    </article>
-    
-    <article class="lesson">
-        <p class="eyebrow">Закрытый урок в кабинете</p>
-        <h3>4. Подготовка к дерматологическому приему</h3>
-        <p class="muted">Какие вопросы задаст врач и почему ответы важны.</p>
-        <img class="lesson-illustration" src="static/courses/illustrations/vet-visit.svg" alt="">
-        
-        <div class="body">На дерматологическом приеме врач часто задает много подробных вопросов. Это не формальность: история болезни определяет, какие тесты нужны первыми.<br><br>Подготовьте перед визитом<br><br>- возраст начала симптомов;<br>- первые зоны зуда;<br>- сезонность и связь с прогулками;<br>- информация о других животных дома;<br>- схема обработок от паразитов;<br>- история кормления и лакомств;<br>- предыдущие диагнозы и назначения;<br>- фото динамики;<br>- список препаратов с дозировками.<br><br>Что может сделать врач на первом приеме<br><br>В зависимости от ситуации врач может провести осмотр кожи и ушей, цитологию, соскобы, вычесывание на блох, оценить вторичную инфекцию и обсудить контроль зуда. При хронических аллергических болезнях важно не только снять зуд сегодня, но и построить долгосрочный план.<br><br>Почему анализ крови на аллергию не всегда отвечает на вопрос владельца<br><br>Аллергологические тесты не являются самостоятельным способом поставить атопический дерматит. В международных рекомендациях атопия рассматривается как диагноз исключения: сначала нужно оценить историю, клиническую картину, паразитов, инфекции и пищевую реакцию. Тесты на аллергены полезны, когда планируется аллерген-специфическая иммунотерапия.<br><br>Источники для подготовки урока:<br>- AAHA, 2023 Management of Allergic Skin Diseases in Dogs and Cats Guidelines: https://www.aaha.org/resources/2023-aaha-management-of-allergic-skin-diseases-in-dogs-and-cats-guidelines/<br>- MSD Veterinary Manual, Atopic Dermatitis in Animals: https://www.merckvetmanual.com/integumentary-system/atopic-dermatitis/atopic-dermatitis-in-animals<br>- Merck Veterinary Manual, Flea Allergy Dermatitis in Dogs and Cats: https://www.merckvetmanual.com/integumentary-system/fleas-and-flea-allergy-dermatitis/flea-allergy-dermatitis-in-dogs-and-cats<br>- Purdue University Veterinary Hospital, Allergy Tips: https://vet.purdue.edu/hospital/small-animal/primary-care/tips/allergy-tips.php</div>
-    </article>
-    
-    <article class="lesson">
-        <p class="eyebrow">Закрытый урок в кабинете</p>
-        <h3>5. Частые ошибки домашнего лечения</h3>
-        <p class="muted">Почему зуд возвращается после мази, смены корма или шампуня.</p>
-        <img class="lesson-illustration" src="static/courses/illustrations/red-flags.svg" alt="">
-        
-        <div class="animation-box">
-            <p class="eyebrow dark">Анимация урока</p>
-            <object class="lesson-animation" type="image/svg+xml" data="static/courses/animations/itch-cycle.svg">
-                <img src="static/courses/animations/itch-cycle.svg" alt="">
-            </object>
-        </div>
-        
-        <div class="body">Самая частая ошибка - лечить зуд как отдельную проблему, не выясняя, что его поддерживает.<br><br>Ошибки, которые мешают врачу<br><br>- использовать человеческие мази и таблетки без назначения;<br>- резко менять корм каждую неделю;<br>- отменять обработку от блох, потому что &quot;блох не видно&quot;;<br>- лечить уши остатками старых капель;<br>- мыть агрессивными шампунями слишком часто;<br>- прекращать назначенный курс сразу после улучшения;<br>- приходить на прием без списка препаратов и дат обработок.<br><br>Почему блохи важны даже когда их не нашли<br><br>При блошиной аллергии реакцию может поддерживать укус. Полное устранение блошиной проблемы требует времени и регулярного контроля среды, а не одной обработки &quot;для галочки&quot;. Для чувствительных животных врач может рекомендовать длительную профилактику.<br><br>Почему хронический зуд редко решается одной процедурой<br><br>Аллергические заболевания кожи часто требуют мультимодального подхода: контроль паразитов, лечение вторичной инфекции, работа с кожным барьером, контроль зуда, диета по показаниям и план наблюдения. У каждой собаки этот план отличается.<br><br>Источники для подготовки урока:<br>- AAHA, 2023 Management of Allergic Skin Diseases in Dogs and Cats Guidelines: https://www.aaha.org/resources/2023-aaha-management-of-allergic-skin-diseases-in-dogs-and-cats-guidelines/<br>- MSD Veterinary Manual, Atopic Dermatitis in Animals: https://www.merckvetmanual.com/integumentary-system/atopic-dermatitis/atopic-dermatitis-in-animals<br>- Merck Veterinary Manual, Flea Allergy Dermatitis in Dogs and Cats: https://www.merckvetmanual.com/integumentary-system/fleas-and-flea-allergy-dermatitis/flea-allergy-dermatitis-in-dogs-and-cats<br>- Purdue University Veterinary Hospital, Allergy Tips: https://vet.purdue.edu/hospital/small-animal/primary-care/tips/allergy-tips.php</div>
-    </article>
-    
-    </section>
-    
-        </div>
+        </section>
+
+        <section class="review-section">
+            <div class="container course-preview">
+                <article>
+                    <p class="eyebrow dark">главный объект ревью</p>
+                    <h2>Практическая дерматология собак и кошек для ветеринарного врача</h2>
+                    <p>Флагманский профессиональный курс для студентов старших курсов, интернов и врачей общей практики. Это уже не короткий демонстрационный текст, а каркас платного продукта: модули, клинические задачи, чек-листы, тесты и источники.</p>
+                    <ul class="module-list">
+                        <li>Клиническое мышление</li>
+                        <li>Анамнез и структура приема</li>
+                        <li>Цитология кожи</li>
+                        <li>Соскобы, блохи, дерматофиты</li>
+                        <li>Зуд и аллергический пациент</li>
+                        <li>Диетический этап</li>
+                        <li>Отит</li>
+                        <li>Пиодермия и антибиотики</li>
+                        <li>Malassezia</li>
+                        <li>Долгосрочный контроль</li>
+                        <li>Коммуникация с владельцем</li>
+                        <li>Итоговый клинический разбор</li>
+                    </ul>
+                </article>
+                <aside class="review-card">
+                    <h3>Что уже есть</h3>
+                    <p><strong>12 уроков</strong></p>
+                    <p><strong>18 академических часов</strong></p>
+                    <p><strong>5 тестовых блоков</strong></p>
+                    <p><strong>Кейсы, чек-листы, источники</strong></p>
+                    <p><strong>Доступ demo-пользователю</strong></p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="review-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow dark">что проверить</p>
+                        <h2>Сценарии просмотра</h2>
+                    </div>
+                    <p>Лучше пройти платформу в двух ролях: как ученик и как администратор.</p>
+                </div>
+                <div class="review-grid">
+                    <article class="review-card">
+                        <h3>Ученик</h3>
+                        <p>Войти в кабинет, открыть флагманский курс, пройти урок, отметить прогресс, попробовать тест и посмотреть страницу оплаты для закрытого курса.</p>
+                    </article>
+                    <article class="review-card">
+                        <h3>Администратор</h3>
+                        <p>Открыть админку, посмотреть курсы, уроки, тестовые вопросы, заказы, доступы и прогресс учеников.</p>
+                    </article>
+                    <article class="review-card">
+                        <h3>Автор</h3>
+                        <p>Отметить, какие уроки требуют медицинской правки, где нужны реальные клинические фото, какие темы можно продавать первыми.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="review-section">
+            <div class="container">
+                <p class="eyebrow dark">важные решения</p>
+                <h2>Что еще не готово для продаж</h2>
+                <ol class="step-list">
+                    <li><strong>Медицинская редакция.</strong> Алевтина Геннадьевна должна утвердить формулировки, логику, протоколы, препараты, дозировки и ограничения.</li>
+                    <li><strong>Авторские материалы.</strong> Нужны реальные клинические фото, случаи, цитологии, схемы и комментарии автора.</li>
+                    <li><strong>Юридическая часть.</strong> Оферта, персональные данные, возвраты, дисклеймер, правила сертификатов.</li>
+                    <li><strong>Видео и файлы.</strong> Нужно решить, где хранить видео, PDF-чеклисты и дополнительные материалы.</li>
+                    <li><strong>Оплата.</strong> Сейчас MVP использует ручную оплату через СБП и ручную выдачу доступа. Автоматизацию подключать после утверждения модели.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="review-section">
+            <div class="container">
+                <div class="review-card warning">
+                    <h3>Статус</h3>
+                    <p>Это закрытый предрелиз. Публично продавать курс нельзя до медицинского и юридического утверждения. Review-пароль на платформе должен оставаться включенным.</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

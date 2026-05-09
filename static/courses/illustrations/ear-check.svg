@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-label="Осмотр уха собаки">
+  <rect width="920" height="420" rx="30" fill="#f7fbf8"/>
+  <rect x="42" y="42" width="836" height="336" rx="24" fill="#fff" stroke="#dce8e2" stroke-width="3"/>
+  <path d="M205 280c-34-28-48-74-33-120 15-47 58-84 104-96 72-19 151 14 182 78 31 63 5 140-57 177-55 34-144 11-196-39Z" fill="#e6f5ee"/>
+  <path d="M281 118c-32 17-56 47-64 81-7 31 1 62 22 86 27 31 76 45 115 34 46-13 78-51 84-94 5-40-13-80-48-102-31-19-75-21-109-5Z" fill="#fff" stroke="#0f6b55" stroke-width="8"/>
+  <path d="M314 160c-29 15-43 52-30 84 11 27 39 44 68 39" fill="none" stroke="#d75b49" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="368" cy="205" r="13" fill="#d75b49"/>
+  <g fill="#111816">
+    <text x="518" y="135" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800">Отит: не только капли</text>
+    <text x="518" y="188" font-family="Inter, Arial, sans-serif" font-size="24" fill="#62716d">История + осмотр + цитология</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800">
+    <rect x="520" y="226" width="106" height="70" rx="12" fill="#e6f5ee"/>
+    <text x="548" y="270" font-size="20" fill="#094737">зуд</text>
+    <rect x="650" y="226" width="106" height="70" rx="12" fill="#fff3ee" stroke="#f0d8d0"/>
+    <text x="676" y="270" font-size="20" fill="#9f3b2e">боль</text>
+    <rect x="780" y="226" width="66" height="70" rx="12" fill="#fbf6e8" stroke="#ead7a8"/>
+    <text x="799" y="270" font-size="20" fill="#7a5a10">ухо</text>
+  </g>
+</svg>

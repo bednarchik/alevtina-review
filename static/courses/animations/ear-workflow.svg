@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-label="Алгоритм осмотра уха">
+  <style>
+    .node{fill:#fff;stroke:#dce8e2;stroke-width:3}
+    .line{stroke:#0f6b55;stroke-width:8;stroke-linecap:round;stroke-dasharray:18 18;animation:move 1.8s linear infinite}
+    .txt{font-family:Inter,Arial,sans-serif;font-weight:800;fill:#111816}
+    .sub{font-family:Inter,Arial,sans-serif;fill:#62716d}
+    @keyframes move{to{stroke-dashoffset:-36}}
+  </style>
+  <rect width="920" height="420" rx="30" fill="#f7fbf8"/>
+  <path class="line" d="M172 210h160M388 210h160M604 210h160"/>
+  <g>
+    <rect class="node" x="58" y="150" width="150" height="120" rx="16"/>
+    <text class="txt" x="102" y="202" font-size="25">жалоба</text>
+    <text class="sub" x="86" y="236" font-size="18">зуд / боль</text>
+  </g>
+  <g>
+    <rect class="node" x="286" y="150" width="150" height="120" rx="16"/>
+    <text class="txt" x="326" y="202" font-size="25">осмотр</text>
+    <text class="sub" x="318" y="236" font-size="18">отоскопия</text>
+  </g>
+  <g>
+    <rect class="node" x="514" y="150" width="150" height="120" rx="16"/>
+    <text class="txt" x="552" y="202" font-size="25">цитология</text>
+    <text class="sub" x="546" y="236" font-size="18">что внутри</text>
+  </g>
+  <g>
+    <rect class="node" x="742" y="150" width="150" height="120" rx="16"/>
+    <text class="txt" x="784" y="202" font-size="25">причина</text>
+    <text class="sub" x="778" y="236" font-size="18">план контроля</text>
+  </g>
+</svg>

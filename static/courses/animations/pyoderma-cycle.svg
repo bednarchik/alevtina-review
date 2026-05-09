@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-label="Цикл пиодермии">
+  <style>
+    .arc{fill:none;stroke:#d75b49;stroke-width:12;stroke-linecap:round;stroke-dasharray:22 18;animation:spin 3s linear infinite;transform-origin:460px 210px}
+    .card{fill:#fff;stroke:#dce8e2;stroke-width:3}
+    .txt{font-family:Inter,Arial,sans-serif;font-weight:800;fill:#111816}
+    .sub{font-family:Inter,Arial,sans-serif;fill:#62716d}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+  <rect width="920" height="420" rx="30" fill="#f7fbf8"/>
+  <circle cx="460" cy="210" r="108" fill="#fff" stroke="#e6f5ee" stroke-width="28"/>
+  <circle class="arc" cx="460" cy="210" r="126"/>
+  <text class="txt" x="391" y="205" font-size="30">пиодермия</text>
+  <text class="sub" x="390" y="240" font-size="20">не финальный диагноз</text>
+  <rect class="card" x="58" y="70" width="220" height="86" rx="14"/>
+  <text class="txt" x="92" y="122" font-size="24">аллергия</text>
+  <rect class="card" x="642" y="70" width="220" height="86" rx="14"/>
+  <text class="txt" x="672" y="122" font-size="24">барьер кожи</text>
+  <rect class="card" x="58" y="264" width="220" height="86" rx="14"/>
+  <text class="txt" x="94" y="316" font-size="24">микробиота</text>
+  <rect class="card" x="642" y="264" width="220" height="86" rx="14"/>
+  <text class="txt" x="684" y="316" font-size="24">рецидив</text>
+</svg>
